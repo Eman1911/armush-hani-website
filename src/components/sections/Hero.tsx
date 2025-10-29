@@ -11,7 +11,7 @@ export function Hero({ onNavigate }: HeroProps) {
     <section className="relative min-h-screen flex items-center">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <ImageWithFallback
+        <img
           src="/assets/home page photo.jpeg"
           alt="ערמוש האני - פרויקטים"
           className="w-full h-full object-cover"

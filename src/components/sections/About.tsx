@@ -31,7 +31,7 @@ export function About() {
             </p>
           </div>
           <div className="relative">
-            <ImageWithFallback
+            <img
               src="/assets/about photo.jpeg"
               alt="ערמוש האני - הצוות שלנו"
               className="rounded-lg shadow-2xl"

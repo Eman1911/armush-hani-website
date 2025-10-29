@@ -1,5 +1,5 @@
 import { Facebook, Instagram, Linkedin, MapPin, Phone } from 'lucide-react';
-import logo from '/assets/50da0a6e085c4cb1e2e8c3927694c2e28575c494.png';
+// import logo from '/assets/50da0a6e085c4cb1e2e8c3927694c2e28575c494.png';
 
 interface FooterProps {
   onNavigate: (page: string) => void;
@@ -13,7 +13,7 @@ export function Footer({ onNavigate }: FooterProps) {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src={logo} alt="ערמוש האני - לוגו החברה" className="h-24 w-auto" />
+              <img src="/assets/50da0a6e085c4cb1e2e8c3927694c2e28575c494.png" alt="ערמוש האני - לוגו החברה" className="h-24 w-auto" />
             </div>
             <p className="text-gray-400 mb-4">
               פתרונות חשמל מקצועיים ומתקדמים לכל סוגי הפרויקטים
