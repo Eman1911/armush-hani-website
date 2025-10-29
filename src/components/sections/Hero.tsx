@@ -1,6 +1,7 @@
 import { Button } from '../ui/button';
 import { Phone } from 'lucide-react';
 import { ImageWithFallback } from '../figma/ImageWithFallback';
+import homePagePhoto from '../../assets/home page photo.jpeg';
 
 interface HeroProps {
   onNavigate: (section: string) => void;
@@ -12,7 +13,7 @@ export function Hero({ onNavigate }: HeroProps) {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/assets/home page photo.jpeg"
+          src={homePagePhoto}
           alt="ערמוש האני - פרויקטים"
           className="w-full h-full object-cover"
         />
