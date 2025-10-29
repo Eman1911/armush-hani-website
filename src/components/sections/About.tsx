@@ -1,5 +1,5 @@
 import { ImageWithFallback } from '../figma/ImageWithFallback';
-import aboutPhoto from '../../assets/about photo.jpeg';
+import aboutPhoto from '../../assets/about-photo.jpeg';
 import { Award, Users, Briefcase, TrendingUp } from 'lucide-react';
 
 export function About() {

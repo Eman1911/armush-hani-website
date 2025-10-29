@@ -1,7 +1,7 @@
 import { Button } from '../ui/button';
 import { Phone } from 'lucide-react';
 import { ImageWithFallback } from '../figma/ImageWithFallback';
-import homePagePhoto from '../../assets/home page photo.jpeg';
+import homePagePhoto from '../../assets/home-page-photo.jpeg';
 
 interface HeroProps {
   onNavigate: (section: string) => void;
