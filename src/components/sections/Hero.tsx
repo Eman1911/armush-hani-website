@@ -12,7 +12,7 @@ export function Hero({ onNavigate }: HeroProps) {
       {/* Background Image */}
       <div className="absolute inset-0">
         <ImageWithFallback
-          src="/src/assets/home page photo.jpeg"
+          src="/assets/home page photo.jpeg"
           alt="ערמוש האני - פרויקטים"
           className="w-full h-full object-cover"
         />

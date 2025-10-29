@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from './ui/button';
-import logo from '../assets/50da0a6e085c4cb1e2e8c3927694c2e28575c494.png';
+import logo from '/assets/50da0a6e085c4cb1e2e8c3927694c2e28575c494.png';
 
 interface NavigationProps {
   currentPage: string;

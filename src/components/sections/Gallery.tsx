@@ -8,18 +8,18 @@ export function Gallery() {
 
   // תמונות פרויקטים אמיתיים של החברה
   const images = [
-    '/src/assets/gallery1.jpeg',
-    '/src/assets/gallery2.jpeg',
-    '/src/assets/gallery3.jpeg',
-    '/src/assets/gallery4.jpeg',
-    '/src/assets/gallery5.jpeg',
-    '/src/assets/gallery6.jpeg',
-    '/src/assets/gallery7.jpeg',
-    '/src/assets/gallery8.jpeg',
-    '/src/assets/gallery9.jpeg',
-    '/src/assets/gallery10.jpeg',
-    '/src/assets/gallery11.jpeg',
-    '/src/assets/gallery12.jpeg',
+    '/assets/gallery1.jpeg',
+    '/assets/gallery2.jpeg',
+    '/assets/gallery3.jpeg',
+    '/assets/gallery4.jpeg',
+    '/assets/gallery5.jpeg',
+    '/assets/gallery6.jpeg',
+    '/assets/gallery7.jpeg',
+    '/assets/gallery8.jpeg',
+    '/assets/gallery9.jpeg',
+    '/assets/gallery10.jpeg',
+    '/assets/gallery11.jpeg',
+    '/assets/gallery12.jpeg',
   ];
 
   return (

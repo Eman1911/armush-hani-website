@@ -1,5 +1,5 @@
 import { Facebook, Instagram, Linkedin, MapPin, Phone } from 'lucide-react';
-import logo from '../assets/50da0a6e085c4cb1e2e8c3927694c2e28575c494.png';
+import logo from '/assets/50da0a6e085c4cb1e2e8c3927694c2e28575c494.png';
 
 interface FooterProps {
   onNavigate: (page: string) => void;
