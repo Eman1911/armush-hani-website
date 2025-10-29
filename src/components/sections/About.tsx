@@ -1,5 +1,4 @@
 import { ImageWithFallback } from '../figma/ImageWithFallback';
-import aboutPhoto from '../../assets/about-photo.jpeg';
 import { Award, Users, Briefcase, TrendingUp } from 'lucide-react';
 
 export function About() {
@@ -33,7 +32,7 @@ export function About() {
           </div>
           <div className="relative">
             <img
-              src={aboutPhoto}
+              src="/assets/about-photo.jpeg"
               alt="ערמוש האני - הצוות שלנו"
               className="rounded-lg shadow-2xl"
             />
