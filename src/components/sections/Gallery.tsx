@@ -1,0 +1,81 @@
+import { useState } from 'react';
+import { ImageWithFallback } from '../figma/ImageWithFallback';
+import { X } from 'lucide-react';
+import { Button } from '../ui/button';
+
+export function Gallery() {
+  const [selectedImage, setSelectedImage] = useState<number | null>(null);
+
+  // תמונות פרויקטים אמיתיים של החברה
+  const images = [
+    '/src/assets/gallery1.jpeg',
+    '/src/assets/gallery2.jpeg',
+    '/src/assets/gallery3.jpeg',
+    '/src/assets/gallery4.jpeg',
+    '/src/assets/gallery5.jpeg',
+    '/src/assets/gallery6.jpeg',
+    '/src/assets/gallery7.jpeg',
+    '/src/assets/gallery8.jpeg',
+    '/src/assets/gallery9.jpeg',
+    '/src/assets/gallery10.jpeg',
+    '/src/assets/gallery11.jpeg',
+    '/src/assets/gallery12.jpeg',
+  ];
+
+  return (
+    <section className="py-20 bg-white" dir="rtl" lang="he">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl text-black mb-4">גלריית תמונות</h2>
+          <div className="w-24 h-1 mx-auto mb-6" style={{ backgroundColor: '#FF8C00' }} />
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            צפו בחלק מהפרויקטים והעבודות שביצענו
+          </p>
+        </div>
+
+        {/* Gallery Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow"
+              onClick={() => setSelectedImage(index)}
+            >
+              <div className="aspect-square">
+                <ImageWithFallback
+                  src={image}
+                  alt={`פרויקט ${index + 1}`}
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Lightbox */}
+        {selectedImage !== null && (
+          <div
+            className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4"
+            onClick={() => setSelectedImage(null)}
+          >
+            <Button
+              variant="ghost"
+              size="icon"
+              className="absolute top-4 left-4 text-white hover:bg-white/20"
+              onClick={() => setSelectedImage(null)}
+            >
+              <X className="w-6 h-6" />
+            </Button>
+            <div className="max-w-6xl w-full">
+              <ImageWithFallback
+                src={images[selectedImage]}
+                alt={`פרויקט ${selectedImage + 1}`}
+                className="w-full h-auto max-h-[90vh] object-contain rounded-lg"
+              />
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+}
